@@ -27,7 +27,7 @@ namespace SEOResultChecker.DomainLogic
 
         private Regex UrlRegex
         {
-            get { return _urlRegex ?? (_regex = new Regex(RegexExpressionForUrl)); }
+            get { return _urlRegex ?? (_urlRegex = new Regex(RegexExpressionForUrl)); }
         }
 
         public SEOResult Parse(string html)
